@@ -1,0 +1,5 @@
+- name: AlchemonToken
+  total: 1000000
+  decimals: 0
+  defaultFrozen: false
+  unitName: ALCHE

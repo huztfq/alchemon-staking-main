@@ -1,0 +1,31 @@
+{
+  "name": "alchemon-staking",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "algob": "yarn build && algob",
+    "lint": "eslint --ext .js,.ts scripts",
+    "lint:fix": "eslint --fix --ext .js,.ts scripts",
+    "test": "yarn algob test",
+    "build:docs": "echo ok",
+    "build": "yarn build:config && yarn tsc --build .",
+    "build:watch": "tsc -w -p .",
+    "build:config": "yarn tsc algob.config.ts --skipLibCheck",
+    "sandbox": "~/.algorand-sandbox/sandbox"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.0",
+    "@types/mocha": "^9.1.0",
+    "@types/superagent": "^4.1.15",
+    "chai": "^4.3.6",
+    "mocha": "^9.2.0",
+    "ts-mocha": "^9.0.2",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "@algo-builder/algob": "^3.1.0",
+    "dotenv": "^15.0.0",
+    "dotenv-cli": "^4.1.1"
+  }
+}
